@@ -22,6 +22,6 @@ jobs:
     - name: Build
       run: dotnet build --configuration Release --no-restore
     - name: Train Intellicode Model
-      uses: osobeso/vsic-trainer@demo
+      uses: osobeso/vs-intellicode@v1
       with:
         pat: ${{ secrets.VSIC_TOKEN }}
