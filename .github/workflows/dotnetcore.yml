@@ -18,9 +18,9 @@ jobs:
       with:
         dotnet-version: 3.1.101
     - name: Install dependencies
-      run: dotnet restore
+      run: dotnet restore src/Notepads.sln
     - name: Build
-      run: dotnet build --configuration Release --no-restore
+      run: dotnet build src/Notepads.sln --configuration Release --no-restore
     - name: Train Intellicode Model
       uses: osobeso/vs-intellicode@v1
       with:
